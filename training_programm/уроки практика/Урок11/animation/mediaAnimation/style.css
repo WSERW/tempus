@@ -1,0 +1,43 @@
+body {
+  font: 150%/1.5 Arial;
+  text-align: center;
+  margin-top: 6em;
+}
+
+h1 {
+  animation: bounce .5s alternate infinite ease-in;
+}
+
+
+
+@media screen and (min-width:701px) {
+    @keyframes bounce {
+        0% {
+            transform: translateX(50%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+  
+  h1 {
+    color: red;
+    display: inline-block; /*needed to trigger update */
+  }
+}
+
+@media screen and (max-width:700px) {
+    @keyframes bounce {
+        0% {
+            transform: translateY(-200%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+  
+  h1 {
+    color: green;
+    display: block; /* needed to trigger update */
+  }
+}

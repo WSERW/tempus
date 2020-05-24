@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+		let und;
+		let Null = null;
+		let Nan = NaN;
+		let bool = true;
+		let number = 3.14;
+		let string = "hello world";
+		let obj = document.body;
+		let inf = Infinity;
+		let negInf = -Infinity;
+
+
+		/*Правила именования переменных
+				
+		Имя переменной должно содержать только буквы, цифры или символы $ и _.
+		Первый символ не должен быть цифрой.
+
+		*/
+
+		/*Виды регистров именования
+
+		camelCase - лучше подходит для JS
+
+		snake_case
+
+		kebab-case
+
+		PascalCase
+
+		UPPER_CASE_SNAKE_CASE
+
+		*/
+		console.log(und + " — " + typeof(und));
+		console.log(Null + " — " + typeof(Null));
+		console.log(Nan + " — " + typeof(Nan));
+		console.log(bool + " — " + typeof(bool));
+		console.log(number + " — " + typeof(number));
+		console.log(string + " — " + typeof(string));
+		console.log(obj + " — " + typeof(obj));
+		console.log(inf + " — " + typeof(inf));
+		console.log(negInf + " — " + typeof(negInf));
+
+
+
+
+		// Проверка допустимости имени переменной
+
+		 let reserved =  ['abstract','arguments','await','boolean',
+								'break',	'byte',	'case',	'catch',
+								'char',	'class',	'const',	'continue',
+								'debugger',	'default',	'delete',	'do',
+								'double',	'else',	'enum',	'eval',
+								'export',	'extends',	'false',	'final',
+								'finally',	'float',	'for',	'function',
+								'goto',	'if',	'implements',	'import',
+								'in',	'instanceof',	'int',	'interface',
+								'let',	'long',	'native','new',
+								'null',	'package',	'private',	'protected',
+								'public',	'return',	'short',	'static',
+								'super',	'switch',	'synchronized',	'this',
+								'throw',	'throws',	'transient',	'true',
+								'try',	'typeof',	'var',	'void',
+								'volatile',	'while',	'with',	'yield',]
+								reserved+= 'bool'
+								alert(reserved)
+		// let regexp = /^[a-zA-Z$_][a-zA-Z0-9$_]*$/
+		// let varName = prompt('Введите имя переменной', 'varName')
+		// reserved.includes(varName)?alert('Недопустимое имя переменной'):regexp.test(varName)?alert('Допустимое имя переменной'):alert('Недопустимое имя переменной')
+		
+let a = 0;
+switch(a){
+	case 1:
+		alert(a);
+		break;
+	case 2:
+		alert(a);
+		break;
+	case 3:
+		alert(a);
+		break;
+	case 4:
+		alert(a);
+		break;
+	default:
+		alert(0);
+}
+
+
+
+</script>
+	</body>
+</html>

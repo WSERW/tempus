@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h1{
+display: block;					/*  чтобы задать нужный размер */
+position: relative;				/*  чтобы before смог унаcледовать размер и позицию  */
+overflow: hidden; 				/*  прячем before за краями элемента  */
+width: max-content;				/* 	задаем элементу ширину по тексту */
+  margin:calc(50vh - 1em) auto;	/* 	центрируем блок(только для примера) */
+}
+h1::before{
+  content: "";					/*	обязательно для появления before(или after)*/
+  position: absolute;			/*  для удобного позиционирования  */
+  display: block;				/*  чтобы задать нужный размер */
+  background: black;			/*  оформление   */
+  height: 1px;
+  width: 100%;
+  margin-top: 1em;				/*  отступ вниз по высоте текста  */
+  transition: 0.5s;				/*  время перехода  */
+  transform: translateX(-100%);	/*  задаем изначальное смещение по оси X  */
+}
+h1:hover::before{
+  transform: translateX(100%);	/*  задаем конечное смещение по оси X (изменить значение на 0 чтобы вернуться в исходное положение)  */
+}
+	</style>
+</head>
+<body>
+	<h1>Some text</h1>
+</body>
+</html>

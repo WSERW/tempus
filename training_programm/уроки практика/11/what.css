@@ -1,0 +1,14 @@
+body{
+	background-image: url(f.jpg);
+}
+#h{
+	color: #E9FF44;
+	text-align: center;
+}
+.cont{	
+}
+.items{
+	display: flex;
+	margin: 350px auto;
+	justify-content: center;
+}

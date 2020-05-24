@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script>
+		//						 /abc/ Последовательность символов
+		//						 /[abc]/ Любой символ из списка
+		//						 /[^abc]/ Любой символ, кроме символов из списка
+		//						 /[0-9]/ Любой символ из промежутка
+		//						 /x+/ Одно или более вхождений шаблона x
+		//						 /x+?/ Одно или более вхождений, нежадное
+		//						 /x*/ Ноль или более вхождений
+		//						 /x?/ Ноль или одно вхождение
+		//						 /x{2,4}/ От двух до четырёх вхождений
+		//						 /(abc)/ Группа
+		//						 /a|b|c/ Любой из нескольких шаблонов
+		//						 /\d/ Любая цифра
+		//						 /\w/ Любой алфавитно-цифровой символ («буква»)
+		//						 /\s/ Любой пробельный символ
+		//						 /./ Любой символ, кроме переводов строки
+		//						 /\b/ Граница слова
+		//						 /^/ Начало строки
+		//						 /$/ Конец строки
+		//Впишите свои регулярки
+		//1) — car и cat
+		//2) — pop и prop
+		//3) — ferret, ferry, и ferrari
+		//4) — Любое слово, заканчивающееся на ious
+		//5) — Пробел, за которым идёт точка, запятая, двоеточие или точка с запятой.
+		//6) — Слово длинее шести букв
+		//7) — Слово без букв e
+		
+
+		verify(/ca[r|t]/,
+		       ["my car", "bad cats"],
+		       ["camper", "high art"]);
+
+		verify(/p(r)?op/,
+		       ["pop culture", "mad props"],
+		       ["plop"]);
+
+		verify(/.../,
+		       ["ferret", "ferry", "ferrari"],
+		       ["ferrum", "transfer A"]);
+
+		verify(/.../,
+		       ["how delicious", "spacious room"],
+		       ["ruinous", "consciousness"]);
+
+		verify(/.../,
+		       ["bad punctuation ."],
+		       ["escape the dot"]);
+
+		verify(/\b\w{6,}\s?/,
+		       ["hottentottententen"],
+		       ["no", "hotten totten tenten"]);
+//\b^[e][a-z][^e]+\b
+		verify(/[^e]/,
+		       ["red platypus", "wobbling nest"],
+		       ["earth bed", "learning ape"]);
+
+		function verify(regexp, yes, no) {
+		  // Ignore unfinished exercises
+		  if (regexp.source == "...") return;
+		  yes.forEach(function(s) {
+		    if (!regexp.test(s))
+		      console.log("Не нашлось '" + s + "'");
+		  });
+		  no.forEach(function(s) {
+		    if (regexp.test(s))
+		      console.log("Неожиданное вхождение '" + s + "'");
+		  });
+		}
+	</script>
+	<title>Document</title>
+	
+</head>
+<body>
+	
+</body>
+</html>

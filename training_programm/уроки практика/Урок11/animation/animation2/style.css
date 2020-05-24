@@ -1,0 +1,45 @@
+.box {
+  animation: change-background 4s linear infinite alternate;
+}
+
+/* Keyframes */
+@keyframes change-background {
+  0% {
+    background: blue;
+  }
+  50% {
+    background: orange;
+  }
+  100% {
+    background: green;
+  }
+}
+
+pre {
+  line-height: 2;
+}
+
+.box {
+  background: blue;
+  position: absolute;
+  left: 20em;
+  top: 6em;
+  height: 6em;
+  width: 6em;
+}
+
+.highlight {
+  animation: move-highlight 4s linear infinite alternate;
+  height: 1.75em;
+  width: 12em;
+  background: rgba(100,100,100,0.2);
+  position: absolute;
+  top: 4em;
+  left: 2em;
+}
+
+@keyframes move-highlight {
+  100% {
+    top: 17em;
+  }
+}

@@ -1,0 +1,21 @@
+.rect{
+  background-color: orange;
+  height: 300px;
+  width: 300px;
+  animation: color 3s alternate infinite;
+border-radius: 3%;
+}
+
+@keyframes color{
+  10%{
+    background-color: orange;
+  }
+  50%{
+    background-color: red; 
+    transform: translateX(20px);
+  }
+  100%{
+    background-color: magenta;
+    transform: translateX(300px) rotate(360deg)  scale(0.5);
+  }
+}

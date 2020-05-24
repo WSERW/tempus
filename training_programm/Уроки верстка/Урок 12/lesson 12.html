@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body> 
+    <button onclick = "alert ('Hello world!')">Hello world</button>
+ 
+    <input type="button" id="elem" onclick="alert('Было')" value="Нажми меня">
+
+
+
+    <button id="myBtn">myBtn</button>
+
+
+    <table>
+        <tr>
+            <td id="table_el">Ячейка</td>
+        </tr>
+    </table>
+<script>
+  elem.onclick = function() { // перезапишет существующий обработчик
+    alert('Станет'); // выведется только это
+  };
+</script>   
+<script src="script.js"></script>
+</body>
+</html>

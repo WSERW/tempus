@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+  	.phone{
+  		margin-top: 40px;
+  		width: 250px;
+		height: 450px;
+		background-color: grey;
+		border-radius: 20px;
+		color: red;
+		position: absolute;
+		transform: rotate(30deg);
+		bottom: -30%;
+		right: 100px;
+  	}
+	.phone:before{
+		content: "";
+		position: absolute;
+		top:25px;
+		left: 25px;
+		display: block;
+		width: 200px;
+		height: 400px;
+		background-color: #fff;
+		opacity: 0.3;
+	}
+.block{
+	background-color: orange;
+	position: relative;
+	overflow: hidden;
+}
+
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+	<a class="navbar-brand" href="#">navbar</a>
+	<button class="navbar-toggler "type="button" data-toggle="collapse" data-target="#tinker" >
+	 <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="tinker">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active"><a class="nav-link" href="#">link</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">link</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">link</a></li>
+			<li class="nav-item"><a class="nav-link disabled" href="#">link</a></li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">drop</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown1">
+					<a class="dropdown-item" href="#">action</a>
+					<a class="dropdown-item" href="#">function</a>
+					<a class="dropdown-item" href="#">book</a>
+					<a class="dropdown-item" href="#">fase</a>
+				</div>
+			</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="text" placeholder="search" aria-label="search">
+			<button class="btn btn-outline-success`` my-2 my-sm-0" type="submit">search</button>
+		</form>
+
+
+
+
+	</div>
+</nav>
+
+<div class="container">
+	<div class="block">
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+		<h2>text</h2>
+	<div class="phone"></div>
+	
+</div>
+
+</div>
+
+</body>
+</html>

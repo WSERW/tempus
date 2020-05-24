@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+    	<title>Good Pizza</title>
+	  	<link rel="stylesheet" type="text/css" href="Урок 1.css">
+	</head> 
+	<body>
+	<div class="header_main">
+	<div class="header">
+		<a href="" class="q">Главная</a>
+		<ul >
+			<li class="menu"><a href="###">Меню</a></li>
+			<li class="menu"><a href="###">О нас</a></li>
+			<li class="menu"><a href="###">Акции</a></li>
+		</ul>
+	</div>
+	</div>
+	<div class="hello"><h1>Добро пожаловать в Good Pizza!</h1></div>
+	<p >МЕНЮ</p>
+	<div class="p1">
+	<div class="pizza" id="marg">Маргарита 500р</div>
+ 	<div class="pizza" id="peper">Пепперони 650р</div>
+ 	<div class="pizza" id="anan">С ананасами 475</div>
+	<div class="pizza" id="vet">С ветчиной 550</div>
+	</div>
+	<form action="###" method="POST">
+		<h2>Хотите сделать заказ?</h2>
+	<p><span class="zk">При заказе от трех блюд действует скидка 10%</span></p>
+		<input name="name" type="password" placeholder="Ваше имя" required="">
+		<input name="adress" type="text" placeholder="Ваш адрес"><br>
+		<label>Выберите пиццу</label>
+		<select name="pizza">
+    		<option>Маргарита</option>
+    		<option>Пепперони</option>
+    		<option>С ананасами</option>
+    		<option>С ветчиной</option>
+		</select>
+		<br>
+		<label for="ch">Добавить сыр</label>	<input name="cheese" type="checkbox" id="ch" >
+		<label for="pep">Добавить перец</label>	<input name="hot" type="checkbox" id="pep" ><br>
+		<label for="cash">Наличными</label>		<input name="pay" type="radio" id="cash" checked>
+		<label for="card">Картой</label>		<input name="pay" type="radio" id="card">
+		<label for="btc">Биткоинами</label>		<input name="pay" type="radio" id="btc"><br>
+		<textarea name="comment" maxlength="100" placeholder="Пожелания к заказу" ></textarea><br>
+		<button name="res" type="reset" >Cбросить</button>
+		<button name="sub" type="submit" >Отправить заказ</button>
+	</form>
+
+	</body>
+</html>

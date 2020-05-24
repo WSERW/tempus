@@ -1,0 +1,29 @@
+#battery1{
+	height: 90px;
+	width: 300px;
+	border: solid gray;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 2px 0 2px 0;
+}
+#bt-section1{
+	margin-left: 2px;
+}
+#battery1 > *{
+	flex-grow: 1;
+	background: green;
+	margin-right: 2px;
+}
+#percent1{
+	color: gray;
+	margin: 0 135px;
+}
+.conteiner{
+	height: 500px;
+	width: 500px;
+	background-color: lightgray;
+}

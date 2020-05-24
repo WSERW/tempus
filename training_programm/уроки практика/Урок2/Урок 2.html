@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+	<head>
+    	<title>Good Pizza</title>
+        <style>
+        	h1{
+    			font-size: 60px;
+    			color:green;
+        		}
+        	h1,h2{
+        		text-align: center;
+        	}
+        	form{
+        		margin: 0 auto; 
+        		width: 30vw;
+        	}
+        	.menu{
+                background-color: orange;
+        		text-align: center;
+        		margin: 0 auto;
+        		width: 35%;
+        	}
+        	.pizza{
+        		display: inline-block;
+        		height: 100px;
+        		width: 100px;
+        		border: 4px solid black;
+        		text-align: center;
+                line-height:50px;   
+        	}
+            #pizza2{
+                border-style: dashed;
+            }
+        	.discount{
+        		font-size: 20px;
+        		text-align: center;
+        		color: red;
+        	}
+        	form p{
+        		font-size: 60px
+        	}
+        </style>
+	</head>
+	<body>
+	<h1>Добро пожаловать в <em>Good Pizza!</em></h1>
+	<h3 align="center">МЕНЮ</h3>
+	<div class="menu">
+		<div class="pizza">
+			Марга<br>
+			695р
+		</div>
+		<div class="pizza" id="pizza2">
+			Пеперонни
+			580р
+		</div>
+		<div class="pizza">
+			С ананасами
+			730р
+		</div>
+		<div class="pizza">
+			С ветчиной 595р
+		</div>
+	</div>
+			
+	<h2>Хотите сделать заказ?</h2>
+	<div class= discount>При заказе от трех блюд действует <strong>скидка 10%</strong></div>
+	<form action="###" method="POST">
+		<input type="text" name="name" placeholder="Ваше имя">
+		<input type="text" name="adress" placeholder="Ваш адрес"><br>
+		<label>Выберите пиццу </label>
+		<select name="pizza">
+    		<option>Маргарита</option>
+    		<option>Пепперони</option>
+    		<option>С ананасами</option>
+    		<option>С ветчиной</option>
+		</select>
+		<label>Оплата картой</label><input type="checkbox" name="card"><br>
+		<input type="submit" name="sub" value="Отправить заказ">
+	</form>
+	</body>
+</html>

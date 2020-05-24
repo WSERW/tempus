@@ -1,0 +1,21 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+/*	width: 800px;*/
+}
+.jelt{
+	order: 2;
+	flex-grow: 1;
+	background-color:yellow;
+}
+.gr{
+	order:3;
+	flex-grow: 2;
+	background-color: grey;
+}
+.zel{
+	order: 1;
+	flex-grow: 1;
+	background-color: green;
+}

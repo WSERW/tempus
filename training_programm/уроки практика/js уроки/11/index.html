@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		form *{	
+			user-select: none;
+
+		}
+	</style>
+	<form action="###" method="GET" name="Test">
+		<input name="name" type="password" placeholder="Ваше имя">
+		<input name="adress" type="text" placeholder="Ваш адрес"><br>
+		<label>Выберите пиццу</label>
+		<select name="pizza">
+    		<option>Маргарита</option>
+    		<option>Пепперони</option>
+    		<option>С ананасами</option>
+    		<option>С ветчиной</option>
+		</select>
+		<br>
+		<label for="ch">Добавить сыр</label>	<input name="cheese" type="checkbox" id="ch" checked>
+		<label for="pep">Добавить перец</label>	<input name="hot" type="checkbox" id="pep" ><br>
+		<label for="cash">Наличными</label>		<input name="pay" type="radio" id="cash" checked>
+		<label for="card">Картой</label>		<input name="pay" type="radio" id="card">
+		<label for="btc">Биткоинами</label>		<input name="pay" type="radio" id="btc"><br>
+		<textarea name="comment" maxlength="100" placeholder="Пожелания к заказу">defaultValue</textarea><br>
+		<button name="res" type="reset" >Cбросить</button>
+		<button name="sub" type="submit" >Отправить заказ</button>
+		<input name='test' type="button" value="Test" onClick="btnClick();">
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>

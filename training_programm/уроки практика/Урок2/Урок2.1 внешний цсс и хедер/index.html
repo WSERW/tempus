@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+	<head>
+    	<title>Good Pizza</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+	<div class="nav">
+			<a class="main_btn" href="index.html">Главная</a>
+			<a class="menu_btn" href="index.html/###">Меню</a>
+			<a class="sale_btn" href="index.html/###">Акции</a>
+			<a class="about_btn" href="index.html/###">О нас</a>
+	</div>
+	<h1>Добро пожаловать в <em>Good Pizza!</em></h1>
+	<h3 align="center">МЕНЮ</h3>
+	<div class= menu>
+		<div class="pizza" id="pz">
+			Марга<br>
+			695р
+		</div>
+		<div class="pizza">
+			Пеперонни
+			580р
+		</div>
+		<div class="pizza">
+			С ананасами
+			730р
+		</div>
+		<div class="pizza">
+			С ветчиной 595р
+		</div>
+	</div>
+			
+	<h2>Хотите сделать заказ?</h2>
+	<div class= discount>При заказе от трех блюд действует <strong>скидка 10%</strong></div>
+	<form action="###" method="POST">
+		<input type="text" name="name" placeholder="Ваше имя">
+		<input type="text" name="adress" placeholder="Ваш адрес"><br>
+		<label>Выберите пиццу </label>
+		<select name="pizza">
+    		<option>Маргарита</option>
+    		<option>Пепперони</option>
+    		<option>С ананасами</option>
+    		<option>С ветчиной</option>
+		</select>
+		<label>Оплата картой</label><input type="checkbox" name="card"><br>
+		<input type="submit" name="sub" value="Отправить заказ">
+	</form>
+	</body>
+</html>

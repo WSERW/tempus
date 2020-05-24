@@ -1,0 +1,86 @@
+.container{
+	display: flex;
+	flex-wrap: wrap-reverse;
+/*	justify-content: center;*/
+	flex-direction: column;
+	height: 1000px;
+	width: 1000px;
+	border:solid;
+}
+.first, .second, .third{
+	display: flex;
+	flex-direction: row;
+	border: 1px dashed black;
+/*	margin: 20px 50px;*/
+/*	padding: 10px;*/
+}
+.first{
+/*	justify-content: center;*/
+/*	align-items: flex-end;*/
+}
+.second{
+	justify-content: space-between;
+	align-items: baseline;
+}
+.third{
+	justify-content: space-evenly;
+	align-items:center;
+}
+
+.a,.b,.c{
+	font-family: Open Sans;
+	font-size: 24px;
+	color: white;
+	line-height: 100px;
+	vertical-align: middle;
+	text-align: center;
+	max-height: 100px;
+	width: 100px;
+}
+.a1,.b1,.c1{
+	background-color: lightblue;
+	width: 20%;
+	line-height: 70px;
+}
+.a2,.b2,.c2{
+	background-color: lightgreen;
+	width: 10%;
+	line-height: 40px;
+}
+.a3,.b3,.c3{
+	background-color: mediumslateblue;	
+	width: 30%;
+	line-height: 80px;
+}
+.a4,.b4,.c4{
+	background-color: blue;
+	height: 120px;
+	line-height: 120px;
+}
+.a5,.b5,.c5{
+	background-color: magenta;
+	height: 90px;
+	line-height: 90px;
+}
+.b3{
+	align-self: flex-end;
+}
+.c1{
+	align-self: flex-start;
+}
+.a5{
+	align-self: center;
+}
+
+.b2{
+	margin-left: 50px;
+}
+.b3{
+	margin-left: -50px;
+}
+.c4{
+	margin-right: 70px;
+}
+.c3{
+	margin-right: -70px;
+}

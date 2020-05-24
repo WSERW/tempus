@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let arr = [ 5, 6, 345, 56, 12, 57 ]
+
+let obj = {
+	val1: 1,
+	val2: 2,
+	val3: 3,
+	val4: 4,
+	val5: 5,
+	val6: 6,
+}
+console.log(obj)
+
+keyCount = 0
+for (let key in obj) {
+	obj[key] = arr[keyCount]
+	keyCount++
+}
+
+console.log(obj)
+	</script>
+</body>
+</html>

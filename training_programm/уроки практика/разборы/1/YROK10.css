@@ -1,0 +1,78 @@
+.container{
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center;
+	flex-direction: column;
+}
+.odin, .dva, .tri{
+    display: flex;
+	border: 1px dashed black;
+	margin: 15px 45px;
+	padding: 10px;
+	height: 150px;
+}
+.odin{
+	justify-content: center;
+	align-items: flex-start;
+}
+.dva{
+	justify-content: space-between;
+    align-items: baseline;
+}
+.tri{
+	justify-content: space-evenly;
+	align-items: center;
+}
+.n,.m,.q{
+	font-family: Open Sans;
+	font-size: 25px;
+	color: black;
+	line-height: 111px;
+	vertical-align: middle;
+	text-align: center;
+	height: 60px;
+	width: 60px;
+}
+.n1,.m1,.q1{
+	background-color: yellow;
+	height: 75px;
+	line-height: 75px;
+}
+.n2,.m2,.q2{
+	background-color: green;
+	height: 59px;
+	line-height: 63px;
+}
+.n3,.m3,.q3{
+	background-color: red;
+	height: 80px;
+	line-height: 60px;
+}
+.n4,.m4,.q4{
+	background-color: blue;
+	height: 63px;
+	line-height: 49px;
+}
+.n5,.m5,.q5{
+	background-color: brown;
+	height: 40px;
+	line-height: 50px;
+}
+.m4{
+	margin-right: 50px;
+}
+.m3{
+	margin-right:  -50px;
+}
+.q4{
+	margin-left: 50px;
+}
+.q5{
+	margin-left: -50px;
+}
+.n4{
+	align-self: flex-end;
+}
+.m2{
+	align-self: flex-start;
+}

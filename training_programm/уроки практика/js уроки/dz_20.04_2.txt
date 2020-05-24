@@ -1,0 +1,155 @@
+1)Составить функцию для составления объекта из двух массивов(массив ключей и массив значений)
+Если значений больше чем  ключей записать оставшиеся значения массивом в последнее свойство,
+если же ключей больше заполнить пустые свойства значением null;
+
+2)Немного  data science. Ниже данные самых населенных городов мира, реализовать несколько выборок:
+	1)Вывести название всех городов, по плотности населения
+	2)Вывести 3 города с наименьшей площадью и их население, по возрастанию площади
+	3)Вывести только столицы
+	4)Вывести список стран и количество их городов входящих в выборку
+	5*)Не использовать при подготовке выборок готовый массив объектов(материал2), преобразовать таблицу(материал1) к нужному формату
+*повышенной сложности
+
+
+2.материал1
+№	Название	Население	Площадь		Плотность населения	Страна		Столица
+1	Шанхай		24 256 800	6 340.50	3 826			Китай		false
+2	Карачи		23 500 000	3 527.00	6 663			Пакистан	false
+3	Пекин		21 516 000	16 410.54	1 311			Китай		true
+4	Дели		16 349 831	1 483.00	11 025			Индия		true
+5	Лагос		16 060 303	1 171.28	13 712			Нигерия		false
+6	Тяньцзинь	15 200 000	11 760.00	1 293			Китай		false
+7	Стамбул		14 160 467	5 461.00	2 593			Турция		false
+8	Токио		13 513 734	2 191.00	6 168			Япония		true
+9	Гуанчжоу	13 080 500	7 434.40	1 759			Китай		false
+10	Мумбаи		12 442 373	603.40		20 620			Индия		false
+11	Москва		12 197 596	2 510.12	4 859			Россия		true
+12	Сан-Паулу	11 895 893	1 521.11	7 821			Бразилия	false
+13	Шэньчжэнь	10 467 400	1 991.64	5 256			Китай		false
+14	Джакарта	10 075 310	664.12		15 171			Индонезия	true
+15	Лахор		10 052 000	1 772.00	5 673			Пакистан	false
+
+2.материал2
+cites = [
+		 {	
+		 	city: 'Shanghai',
+			population: 24256800,
+			area:6340.50,
+			population_density:3826,
+			country: 'China',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Karachi',
+			population: 23500000,
+			area:3527.00,
+			population_density:6663,
+			country:'Pakistan',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Beijing',
+			population: 21516000,
+			area:16410.54,
+			population_density:1311,
+			country: 'China',
+			is_capital: true,
+		},
+		{	
+		 	city: 'Delhi',
+			population: 16349831,
+			area:1483.00,
+			population_density:11025,
+			country:'India',
+			is_capital: true,
+		},
+		{	
+		 	city: 'Lagos',
+			population: 16060303,
+			area:1171.28,
+			population_density:13712,
+			country:'Nigeria',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Tianjin',
+			population: 15200000	,
+			area:11760.00,
+			population_density:1293,
+			country: 'China',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Istanbul',
+			population: 14160467	,
+			area:5461.00	,
+			population_density:2593,
+			country: 'Turkey',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Tokyo',
+			population: 13513734	,
+			area:2191.00,
+			population_density:6168	,
+			country:'Japan',
+			is_capital: true,
+		},
+		{	
+		 	city: 'Guangzhou',
+			population: 13080500,
+			area:7434.40	,
+			population_density:1759	,
+			country: 'China',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Mumbai',
+			population: 12442373,
+			area:603.40	,
+			population_density:20620,
+			country:'India',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Moscow',
+			population: 12197596,
+			area:2510.12	,
+			population_density:4859	,
+			country: 'Russia',
+			is_capital: true,
+		},
+		{	
+		 	city: 'Sao Paulo',
+			population: 11895893,
+			area:1521.11	,
+			population_density:7821	,
+			country:'Brazil',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Shenzhen',
+			population: 10467400,
+			area:1991.64	,
+			population_density:5256,
+			country: 'China',
+			is_capital: false,
+		},
+		{	
+		 	city: 'Jakarta',
+			population: 210075310,
+			area:664.12	,
+			population_density:15171,
+			country: 'Indonesia',
+			is_capital: true,
+		},
+		{	
+		 	city: 'Lahore',
+			population: 10052000,
+			area:1772.0,
+			population_density:5673,
+			country: 'Pakistan',
+			is_capital: false,
+		},
+
+]

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		ol{
+			list-style: upper-roman;
+		}
+		ul{
+			list-style: url();
+		}
+		td:nth-child(odd) {
+			color: gray;
+		}
+		td:first-of-type {
+			color: red;
+		}
+		tr:first-child td {
+			color: blue;
+		}
+		th {
+			color: red;
+		}
+		h1{
+			display: block;
+			position: relative;
+		/*	overflow: hidden;*/
+			width:max-content;
+			margin: 0 auto;
+			border:solid;
+		}
+		h1::before{
+			content: "";
+			position: absolute;
+			display: block;
+			background: black;
+			height: 1px;
+			width: 100%;
+			margin-top: 1em;
+			transition: 0.5s;;
+			transform: translateX(-100%);
+			z-index: -1;
+		}
+		h1:hover::before{
+			transform: translateX(100%);
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1
+			<ul>
+				<li>1.1
+					<ul>
+						<li>1.1.1</li>
+					</ul></li>
+			</ul>
+		</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<ol>
+		<li>a
+			<ol>
+				<li>a</li>
+				<li>a</li>
+				<li>a</li>
+			</ol>
+		</li>
+		<li>b</li>
+		<li>c</li>
+		<li>d</li>
+	</ol>
+	<dl>
+		<dt>термин</dt>
+		<dd>определение</dd>
+		<dt>термин</dt>
+		<dd>определение</dd>
+		<dt>термин</dt>
+		<dd>определение</dd>
+		<dt>термин</dt>
+		<dd>определение</dd>
+	</dl>
+<table border="1" >
+	<tr>
+		<th>1</th>
+		<th>1111111</th>
+
+		<th colspan="2">1</th>
+	</tr>
+	<tr>
+		<td>11111111</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td rowspan="2">1</td>
+		<td>11111111</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		
+		<td>1</td>
+		<td>11111111</td>
+	</tr>
+
+</table>
+<br>
+<table>
+	<tr>
+		<th>1</th>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+	<th>1</th>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<th>1</th>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<th>1</th>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<th>1</th>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+
+</table>
+	<h1>Заголовок</h1>
+</body>
+</html>

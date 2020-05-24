@@ -1,0 +1,40 @@
+    	   body {
+            margin: 0;
+            padding: 0;
+           }   
+        	h1{
+    			font-size: 60px;
+    			color:green;
+        		}
+        	h1,h2{
+        		text-align: center;
+        	}
+        	form{
+        		margin: 0 auto; 
+        		width: 30vw;
+        	}
+        	.menu{
+                background-color: orange;
+        		text-align: center;
+        		margin: 0 auto;
+        		width: 35%;
+        	}
+        	.pizza{
+        		display: inline-block;
+        		height: 100px;
+        		width: 100px;
+        		border: 4px solid black;
+        		text-align: center;
+                line-height:50px;     
+        	}
+            .bdash{
+                 border-style: dashed;
+            }
+        	.discount{
+        		font-size: 20px;
+        		text-align: center;
+        		color: red;
+        	}
+        	form p{
+        		font-size: 60px
+        	}
