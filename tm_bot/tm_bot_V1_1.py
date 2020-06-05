@@ -69,7 +69,7 @@ mainTiming = time.time()
 i = 0
 
 # бесконечный цикл бота
-while True:
+while __name__ == "__main__":
 	# цикл запросаов на продажу
 	# try:
 	# 	requestTM(update)
@@ -124,9 +124,12 @@ while True:
 	# запрос списка лучших цен
 	bestOrderPriceList = [0 for i in range(len(orderList['Orders']))]
 	for elem in orderList['Orders']:
-		itemPrice = int(orderList['Orders'][i]['o_price'])
-		classId = orderList['Orders'][i]['i_classid']
-		instanceId = orderList['Orders'][i]['i_instanceid']
+		try:
+			itemPrice = int(orderList['Orders'][i]['o_price'])
+			classId = orderList['Orders'][i]['i_classid']
+			instanceId = orderList['Orders'][i]['i_instanceid']
+		except Exception as identifier:
+			pass
 		k = False
 		try:
 			bestOrder = int(requestTM(bestOrderPrice())['best_offer'])

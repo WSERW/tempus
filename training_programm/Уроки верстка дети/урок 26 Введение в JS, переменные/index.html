@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		pre {
+			width: max-content;
+			background-color: gray;
+			color: white;
+			padding: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Введение в JS</h1>
+	<h2>Для сего нужен javascript?</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit obcaecati, aperiam sunt tempore repudiandae, veniam quibusdam atque odit soluta voluptatem reprehenderit cum minima harum, itaque qui, blanditiis velit assumenda quisquam.</p>
+	<h2>Как подключить js-плагин к странице</h2>
+	<p>Сценарии JavaScript бывают встроенные, т.е. их содержимое является частью документа, и внешние, хранящиеся в отдельном файле с расширением .js. Сценарии можно внедрить в html-документ следующими способами:</p>
+	<ul>		
+		<li>Внутрь элкмента script</li>
+<pre><code>			
+&#60footer&#62
+	&#60script&#62
+		document.write("Введите свое имя");
+	&#60/script&#62
+	&#60/footer&#62
+&#60/body&#62
+
+</code></pre>
+		<li>В виде гиперссылки</li>
+<pre><code>			
+&#60footer&#62
+	&#60script='script.js'&#62&#60/script&#62
+	&#60/footer&#62
+&#60/body&#62
+
+</code></pre>
+		<code></code>
+		<li>В виде обработкчика событий</li>
+		<code>* с этим способом познакомимся в теме создания анимации</code>
+	</ul>
+	<h2>Типы данных в javascript</h2>
+	<p>Компьютеры обрабатывают информацию — данные. Данные могут быть представлены в различных формах или типах. Большая часть функциональности JavaScript реализуется за счет простого набора объектов и типов данных. Функциональные возможности, связанные со строками, числами и логикой, базируются на строковых, числовых и логических типах данных. Другая функциональная возможность, включающая регулярные выражения, даты и математические операции, осуществляется с помощью объектов RegExp, Date и Math.</p>
+	<p>Литералы в JavaScript представляют собой особый класс типа данных, фиксированные значения одного из трех типов данных — строкового, числового или логического:</p>
+	<ul>
+		<li>"это строка" </li>
+		<li>3.14</li>
+		<li>true</li>
+		<li>alert("Hellow"); // "Hellow" - это литерал</li>
+		<li>var myVariable = 15; // 15 - это литерал</li>
+	</ul>
+	<h3>Переменные</h3>
+	<p>Данные, обрабатываемые сценарием JavaScript, являются переменными. Переменные представляют собой именованные контейнеры, хранящие данные (значения) в памяти компьютера, которые могут изменяться в процессе выполнения программы. Переменные имеют имя, тип и значение.</p>
+	<p>Имя переменной, или идентификатор, может включать только буквы a-z, A-Z, цифры 0-9 (цифра не может быть первой в имени переменной), символ $ (может быть только первым символом в имени переменной или функции) и символ подчеркивания _, наличие пробелов не допускается. Длина имени переменной не ограничена. Можно, но не рекомендуется записывать имена переменных буквами русского алфавита, для этого они должны быть записаны в Unicode.</p>
+	<p>В качестве имени переменной нельзя использовать ключевые слова JavaScript. Имена переменных в JavaScript чувствительные к регистру, что означает, что переменная var message; и var Message; — разные переменные.</p>
+	<h3>Типы данных переменных</h3>
+	<p>JavaScript является нетипизированным языком, тип данных для конкретной переменной при ее объявлении указывать не нужно. Тип данных переменной зависит от значений, которые она принимает. Тип переменной может изменяться в процессе совершения операций с данными (динамическое приведение типов). Преобразование типов выполняется автоматически в зависимости от того, в каком контексте они используются. Например, в выражениях, включающих числовые и строковые значения с оператором +, JavaScript преобразует числовые значения в строковые:</p>
+	<p>var message = 10 + " дней до отпуска"; // вернет "10 дней до отпуска"</p>
+	<p>Получить тип данных, который имеет переменная, можно с помощью оператора typeof. Этот оператор возвращает строку, которая идентифицирует соответствующий тип.</p>
+	<ul>
+		<li>typeof 35; // вернет "number"</li>
+		<li>typeof "text"; // вернет "string"</li>
+		<li>typeof true; // вернет "boolean"</li>
+		<li>typeof [1, 2, 4]; // вернет "object"</li>
+		<li>typeof undefined; // вернет "undefined"	</li>
+		<li>typeof null; // вернет "object" </li>
+	</ul>
+	<h4>Строковый тип</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eum quasi ullam optio culpa molestiae corrupti voluptate, perspiciatis officia omnis voluptas necessitatibus earum recusandae tempore tenetur impedit hic iste, nemo!</p>
+	<h4>Числовой тип</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim possimus accusantium eveniet inventore, dignissimos provident voluptatibus non! Itaque at cum impedit distinctio molestias, aliquid porro quia animi libero est.</p>
+	<h3>Локальные и глобальные переменные</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, debitis, sunt! Deserunt nam ut, aspernatur voluptas possimus illo rerum vitae reiciendis impedit autem soluta sequi similique mollitia minus, eius, accusamus.</p>
+</body>
+</html>
